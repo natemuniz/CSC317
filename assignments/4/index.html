@@ -1,18 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>JavaScript Practice</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nate Muniz Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <h1>JavaScript Week 0 Practice</h1>
-    <button id="greetButton">Click Me!</button>
-    <div id="output"></div>
-    
-    <script src="hello.js"></script>
-    <script>
-        document.getElementById("greetButton").addEventListener("click", function() {
-            document.getElementById("output").textContent = createMessage("JavaScript");
-        });
-    </script>
+    <header>
+        <h1>Nate Muniz Portfolio</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="calculator.html">Calculator</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Welcome to my portfolio! Here you'll find my projects and JavaScript experiments.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-card">
+                <h3>JavaScript Calculator</h3>
+                <p>
+                    A fully functional calculator implemented in JavaScript, mimicking iOS/Android apps.
+                    Supports addition, subtraction, multiplication, division, AC, %, +/-, decimal points, and keyboard input.
+                </p>
+                <img src="images/calculator-preview.jpg" alt="Calculator Preview" width="300">
+                <p><a href="calculator.html">View Calculator</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Nate Muniz</p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
 </body>
 </html>
