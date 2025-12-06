@@ -1,0 +1,28 @@
+body {
+    background: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    padding: 20px;
+    text-align: center;
+    background: #222;
+}
+
+main {
+    padding: 20px;
+}
+
+.project-card {
+    background: #222;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 20px 0;
+}
+
+.project-card a {
+    color: #0af;
+}

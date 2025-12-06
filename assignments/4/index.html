@@ -1,18 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>JavaScript Practice</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Calculator</title>
+    <link rel="stylesheet" href="styles/calculator.css">
 </head>
 <body>
-    <h1>JavaScript Week 0 Practice</h1>
-    <button id="greetButton">Click Me!</button>
-    <div id="output"></div>
-    
-    <script src="hello.js"></script>
-    <script>
-        document.getElementById("greetButton").addEventListener("click", function() {
-            document.getElementById("output").textContent = createMessage("JavaScript");
-        });
-    </script>
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+        <div class="buttons">
+            <button class="utility" id="clear">AC</button>
+            <button class="utility" id="plus-minus">+/-</button>
+            <button class="utility" id="percent">%</button>
+            <button class="operator" data-op="/">÷</button>
+
+            <button class="number" data-num="7">7</button>
+            <button class="number" data-num="8">8</button>
+            <button class="number" data-num="9">9</button>
+            <button class="operator" data-op="*">×</button>
+
+            <button class="number" data-num="4">4</button>
+            <button class="number" data-num="5">5</button>
+            <button class="number" data-num="6">6</button>
+            <button class="operator" data-op="-">-</button>
+
+            <button class="number" data-num="1">1</button>
+            <button class="number" data-num="2">2</button>
+            <button class="number" data-num="3">3</button>
+            <button class="operator" data-op="+">+</button>
+
+            <button class="number" data-num="0">0</button>
+            <button class="number" data-num=".">.</button>
+            <button class="operator" id="equals">=</button>
+        </div>
+    </div>
+
+    <script src="scripts/calculator.js"></script>
+</body>
+</html>
+
+
+    <script src="scripts/script.js"></script>
 </body>
 </html>
